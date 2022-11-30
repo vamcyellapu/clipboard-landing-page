@@ -60,4 +60,20 @@ a {
 }
 .link:hover {
   color: hsl(171deg, 66%, 44%);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav__list {
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=styles.css.map */

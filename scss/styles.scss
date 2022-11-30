@@ -64,9 +64,25 @@ a {
 .link {
   color: $color-headings;
   transition: color 0.15s;
-  img {
-  }
+
   &:hover {
     color: $color-primary;
+  }
+}
+
+// Lists
+.nav {
+  display: flex;
+  flex-direction: column;
+  &__list {
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
