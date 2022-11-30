@@ -140,3 +140,14 @@ a {
     max-width: 25rem;
   }
 }
+
+// Media
+
+.media {
+  img {
+    margin-bottom: 3rem;
+  }
+  &__heading {
+    margin-bottom: 2rem;
+  }
+}

@@ -119,4 +119,10 @@ a {
   .btn {
     max-width: 25rem;
   }
+}
+.media img {
+  margin-bottom: 3rem;
+}
+.media__heading {
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=styles.css.map */
