@@ -1,0 +1,72 @@
+$color-primary: hsl(171, 66%, 44%);
+$color-secondary: hsl(233, 100%, 69%);
+$color-headings: hsl(210, 10%, 33%);
+$color-body: hsl(201, 11%, 66%);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Typography
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Bai Jamjuree", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: $color-body;
+  line-height: 1.7;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: $color-headings;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+// Links
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: $color-headings;
+  transition: color 0.15s;
+  img {
+  }
+  &:hover {
+    color: $color-primary;
+  }
+}
