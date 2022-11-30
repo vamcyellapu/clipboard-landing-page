@@ -2,6 +2,7 @@ $color-primary: hsl(171, 66%, 44%);
 $color-secondary: hsl(233, 100%, 69%);
 $color-headings: hsl(210, 10%, 33%);
 $color-body: hsl(201, 11%, 66%);
+$color-white: #fff;
 
 *,
 *::after,
@@ -102,5 +103,40 @@ a {
   &--xl {
     width: 12.5rem;
     height: 12.5rem;
+  }
+}
+
+// buttons
+
+.btn {
+  border: none;
+  padding: 2rem;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 40rem;
+  font-weight: 600;
+  font-family: inherit;
+
+  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.4);
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: inset 0 -4px 0 0 darken($color-primary, $amount: 10%),
+      0 10px 50px -10px $color-primary;
+  }
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+    box-shadow: inset 0 -4px 0 0 darken($color-secondary, $amount: 10%),
+      0 10px 50px -10px $color-secondary;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    max-width: 25rem;
   }
 }
